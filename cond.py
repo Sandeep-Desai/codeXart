@@ -63,6 +63,9 @@ def mask(mask_pos):
     color_grp_1= ['cyan', 'white', 'green', 'teal']
     color_grp_2= ['red', 'orange', 'brown', 'yellow','black']
     color_grp_3= ['black', 'purple', 'indigo', 'deeppink']
+    
+    # print(mask_pos)
+    
     if mask_pos.mean()>0.5:
         return color_grp_2
     else:

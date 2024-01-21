@@ -21,7 +21,7 @@ approx_arr= np.zeros(shape=image_arr.shape)
 
 rows, cols= image_arr.shape[:2]
 
-mask_arr= mask_to_arr('assets/mask-5.jpg', rows,cols)
+mask_arr= mask_to_arr('assets/mask-7.png', rows,cols)
 
 print(mask_arr.shape)
 print(image_arr.shape)
@@ -38,4 +38,4 @@ for i in trange(rows):
 
 plt.imshow(approx_arr)
 plt.show()
-plt.imsave(fname=f'results/lal_minar.png',arr=approx_arr)
+plt.imsave(fname=f'results/lal_minar-mask-2.png',arr=approx_arr)
