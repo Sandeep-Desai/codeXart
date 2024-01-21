@@ -18,3 +18,14 @@ run.py and run_gif.py for running files
 
 ## Some results 
 
+### Lal Minar 
+<img src ="https://github.com/Sandeep-Desai/codeXart/blob/main/results/lal_minar-mask-2.png">
+
+### Lal Minar GIF
+<img src ="https://github.com/Sandeep-Desai/codeXart/blob/main/results/lal_minar_trippy.gif">
+
+### Matt Murdock (Daredevil)
+<img src="https://github.com/Sandeep-Desai/codeXart/blob/main/results/matt_res_red.gif">
+
+### Paris 
+<img src ="https://github.com/Sandeep-Desai/codeXart/blob/main/results/paris-mask-1.png">
