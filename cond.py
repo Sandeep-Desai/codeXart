@@ -1,4 +1,7 @@
 import numpy as np
+from PIL import Image
+import matplotlib.pyplot as plt
+
 def get_color_grp_circle(circle_center, circle_radius, x,y):
     is_in_circle= ((x-circle_center[0])**2 + (y-circle_center[1])**2 )< circle_radius**2
     
@@ -53,3 +56,30 @@ def grids(rows,cols,x ,y ):
         return color_grp_1
     else:
         return color_grp_2
+
+def mask(mask_pos):
+    white_col=np.array([1])
+    black_col= np.array([0])
+    color_grp_1= ['cyan', 'white', 'green', 'teal']
+    color_grp_2= ['red', 'orange', 'brown', 'yellow','black']
+    color_grp_3= ['black', 'purple', 'indigo', 'deeppink']
+    if mask_pos.mean()>0.5:
+        return color_grp_2
+    else:
+        return color_grp_3
+    
+def mask_to_arr(mask_file, rows, cols):
+    image_path= mask_file
+
+    image=Image.open(image_path)
+
+    image= image.resize((cols,rows))
+
+    image_arr= np.array(image)
+    image_arr= image_arr/ 255
+    print(image_arr[0][0])
+    plt.imshow(image_arr)
+    plt.show()
+    print(image_arr.shape)
+    print(np.max(image_arr))
+    return image_arr
